@@ -111,19 +111,4 @@
 	
 		</div>
 </div>
-
-<div class = "container">
-	<h2> Оставьте свой комментарий</h2>
-	<div class="sub-header">Это займет пару минут</div>
-	<div class = "col">
-		<form   action="send.php" method="post"></form>
-		<textarea class = "mylid" name="comment" cols="60" rows="10"></textarea><br>
-	<!----	<input class = "mylid" type="text" name="mail" placeholder="Оставьте свое сообщение"><br> -->
-		<input class = "button" type="submit" value="Отправить">
-		</form>
-	</div>
-</div>
-
-
-
 </body>
