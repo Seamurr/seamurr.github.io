@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');/*: 'Oswald', sans-serif;*/
+
+
+body {
+	margin: 0;
+	background: #111111;
+}
+
+.container {
+	position: relative;
+	max-width: 100%;
+	margin-top: 2%;
+	padding: 5px 5px 5px;
+	box-sizing: border-box;
+	background: #161616;
+  }
+
+  .row
+  {
+	margin-left: 7%;
+	  margin-right: 7%;
+  }
+
+  
+h1 {
+	font-size: 3.4em;
+	margin: 0.67em 0;
+	text-align: center;
+	color: rgb(180, 201, 177);
+	font-family: 'Oswald', sans-serif;
+	padding-top: 2%;
+}
+
+h2 {
+	font-size: 2.7em;
+	margin: 0.67em 0;
+	text-align: center;
+	color: rgb(117, 253, 117);
+	font-family: 'Exo 2', sans-serif;
+}
+h3 {
+	font-size: 1.7em;
+	margin: 0.67em 0;
+	text-align: center;
+	color: rgb(229, 248, 234);
+	font-family: 'Exo 2', sans-serif;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+.sub-header
+{
+	text-align: center;
+	font-size: 1.5em;
+	color: rgb(229, 236, 245);
+	font-family: 'Exo 2', sans-serif;
+}
+
+.col-md-4
+{
+	background:  #222222;
+  margin-top: 0,5%;
+  margin-bottom: 1%;
+  margin-left:1%;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 0 15px rgba(20, 20, 20, 0.5); 
+  padding: 10px; /* Поля вокруг текста */
+  border-radius: 5px;
+}
+
+.button {
+	background-color: rgb(78, 241, 14);
+	color: white;
+	padding: 1em 1.1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 100px;
+	text-align: center;
+	width: 300px;
+	max-width: 100%;
+  }
+  
+  .button:hover {
+	background-color: rgb(119, 214, 100);
+  }
+  
+  .button:active {
+	background-color: rgb(64, 105, 52);
+  }
+  
+  .button:visited {
+	background-color: rgb(204, 204, 204);
+  }
+
+.mylid
+{
+	text-align: center;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 2% 2% 2%;
+}
+.col
+{
+	text-align: center;
+}
+li
+{
+	padding-top: 5%;
+}
+p
+{
+	padding: 2% 2% 0.1%;
+}
+
+/* ~~~~~~~ INIT. BTN ~~~~~~~ */
+.h-emph{
+	
+	text-decoration: none;
+	height: 38px;
+	padding-top: 5%;
+	position: relative;
+	transition: color .2s;
+	
+  }
+  
+  .h-emph, .h-emph :visited {color: #7d7777;}
+  .h-emph.current, .h-emph:hover{color: #38ff59;}
+  .h-emph:before,
+  .h-emph:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	top: auto;
+	right: 50%;
+	bottom: -1px;
+	left: 50%;
+	background: #e3fddf;
+	transition: .18s;
+	
+  }
+  .h-emph:hover:before, .h-emph .current:before {left: 0;}
+  .h-emph:hover:after, .h-emph .current:after {right: 0;}   
+ 
+ 
+  
+  /* скрываем чекбоксы и блоки с содержанием */
+.hide, .hide + label ~ div {
+    display: none; 
+}
+/* вид текста label */
+.hide + label,
+.hide:checked + label {
+    padding: 0;
+    color: green;
+    cursor: pointer;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: rgb(81, 85, 80);
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
