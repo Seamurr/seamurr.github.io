@@ -67,6 +67,14 @@ hr {
 	font-family: 'Exo 2', sans-serif;
 }
 
+.text-2
+{
+	text-align: center;
+	font-size: 2em;
+	color: rgbrgb(120, 0, 240);
+	font-family: 'Exo 2', sans-serif;
+}
+
 .col-md-4
 {
 	background:  #222222;
